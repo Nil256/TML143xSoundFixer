@@ -30,6 +30,7 @@ namespace TML143xSoundFixer
         private void Form1_HelpButtonClicked(object sender, System.ComponentModel.CancelEventArgs e)
         {
             e.Cancel = true;
+            new HelpDialog().ShowDialog();
         }
 
         private void tMLPathRefButton_Click(object sender, EventArgs e)

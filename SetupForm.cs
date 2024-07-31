@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
+﻿using System.Diagnostics;
 using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace TML143xSoundFixer
 {
@@ -16,6 +8,7 @@ namespace TML143xSoundFixer
         public SetupForm(string tMLPath, FolderBrowserDialog tMLFolderBrowserDialog, string fAudioPath)
         {
             InitializeComponent();
+            // 最初はこの方法で実装していたけど、「次へ」で失敗したら元のページに戻る仕様が必要になった
             // prevButton.Click += ResetPage;
             // nextButton.Click += ResetPage;
 
@@ -401,6 +394,7 @@ namespace TML143xSoundFixer
             CreatePage_Finish();
         }
         /*
+        // TextBoxのTextが変更されるたび確認するのは重いかもだからやめた
         private void CheckTMLDirectoryPath(string path)
         {
             nextButton.Enabled = (Directory.Exists(path));

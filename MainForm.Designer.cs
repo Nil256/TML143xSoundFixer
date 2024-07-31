@@ -176,7 +176,7 @@
             MinimizeBox = false;
             Name = "MainForm";
             ShowIcon = false;
-            Text = "tModLoader v1.4.3 音質改善ソフトウェア";
+            Text = "tSoundFixer for v1.4.3 (tModLoader v1.4.3 音質改善ソフト)";
             HelpButtonClicked += Form1_HelpButtonClicked;
             buttonContainer.ResumeLayout(false);
             ResumeLayout(false);
