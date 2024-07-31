@@ -1,10 +1,12 @@
 # TML143xSoundFixer (tSoundFixer for v1,4,3)
 
-Windows 11‚Å”­¶‚µ‚Ä‚¢‚é tModLoader v1.4.3‚Ì‰¹Ž¿‚ªˆ«‚¢–â‘è‚ðC³‚·‚é‚½‚ß‚Ìƒ\ƒtƒgƒEƒFƒAB
-(‚¨‚»‚ç‚­Windows11ŒÀ’è?)
-https://note.com/nil256/n/nf754e0b10829 ‚ÌŽè‡‚ð‚ ‚é’ö“xŽ©“®‰»‚Å‚«‚Ü‚·B
+Windows 11ã§ç™ºç”Ÿã—ã¦ã„ã‚‹ tModLoader v1.4.3ã®éŸ³è³ªãŒæ‚ªã„å•é¡Œã‚’ä¿®æ­£ã™ã‚‹ãŸã‚ã®ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã€‚
 
-## Žg‚¢•û
+(ãŠãã‚‰ãWindows11é™å®š?)
 
-## ƒ_ƒEƒ“ƒ[ƒh
-https://github.com/Nil256/TML143xSoundFixer/releases ‚©‚çƒ_ƒEƒ“ƒ[ƒh‚Å‚«‚Ü‚·B
+https://note.com/nil256/n/nf754e0b10829 ã®æ‰‹é †ã‚’ã‚ã‚‹ç¨‹åº¦è‡ªå‹•åŒ–ã§ãã¾ã™ã€‚
+
+## ä½¿ã„æ–¹
+
+## ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰
+https://github.com/Nil256/TML143xSoundFixer/releases ã‹ã‚‰ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã§ãã¾ã™ã€‚
