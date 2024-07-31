@@ -4,9 +4,19 @@ namespace TML143xSoundFixer
 {
     internal static class Pathes
     {
+        internal static string GetApplicationDirectory()
+        {
+            return Path.GetDirectoryName(Application.ExecutablePath) ?? "";
+        }
+
+        internal static string GetApplicationLogFilePath()
+        {
+            return Path.Combine(GetApplicationDirectory(), "tSoundFixer-Error.log");
+        }
+
         internal static string GetApplicationFAudio144DirectoryPath()
         {
-            return Path.Combine(Path.GetDirectoryName(Application.ExecutablePath) ?? "", "tMLAudioLib", "v1.4.4");
+            return Path.Combine(GetApplicationDirectory(), "tMLAudioLib", "v1.4.4");
         }
 
         internal static string GetGetApplicationFAudio144Path()

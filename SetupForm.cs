@@ -1,5 +1,4 @@
 ﻿using System.Diagnostics;
-using System.Text;
 
 namespace TML143xSoundFixer
 {
@@ -380,12 +379,7 @@ namespace TML143xSoundFixer
             }
             catch (Exception ex)
             {
-                StringBuilder mbText = new StringBuilder();
-                mbText.Append("ファイルのコピー中にエラーが発生しました。");
-                mbText.Append($"\n{ex.Message}");
-                mbText.Append($"\n以下スタックトレース");
-                mbText.Append($"\n{ex.StackTrace}");
-                MessageBox.Show(mbText.ToString(), "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Logger.Error(ex, true, "ファイルのコピー中にエラーが発生しました。");
                 return;
             }
             prevButton.Click -= TMLPage2_OnClickPrevButton;
@@ -488,12 +482,7 @@ namespace TML143xSoundFixer
             }
             catch (Exception ex)
             {
-                StringBuilder mbText = new StringBuilder();
-                mbText.Append("ファイルのコピー中にエラーが発生しました。");
-                mbText.Append($"\n{ex.Message}");
-                mbText.Append($"\n以下スタックトレース");
-                mbText.Append($"\n{ex.StackTrace}");
-                MessageBox.Show(mbText.ToString(), "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Logger.Error(ex, true, "ファイルのコピー中にエラーが発生しました。");
                 return;
             }
             prevButton.Click -= LocalPage1_OnClickPrevButton;

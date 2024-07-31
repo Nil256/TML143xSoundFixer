@@ -67,16 +67,14 @@ namespace TML143xSoundFixer
 
             if (!File.Exists(fAudioPath))
             {
-                StringBuilder mbText = new StringBuilder();
-                mbText.Append("このソフトにFAudio.dllがコピーされていません。\nセットアップでAudio.dllを取得してください。");
-                MessageBox.Show(mbText.ToString(), "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                string message = "このソフトにFAudio.dllがコピーされていません。\nセットアップでAudio.dllを取得してください。";
+                MessageBox.Show(message, "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             if (!Directory.Exists(Path.GetDirectoryName(tMLFAudioPath)))
             {
-                StringBuilder mbText = new StringBuilder();
-                mbText.Append("tModLoader内のFAudio.dllのパスが無効です。");
-                MessageBox.Show(mbText.ToString(), "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                string message = "tModLoader側のFAudio.dllのパスが無効です。";
+                MessageBox.Show(message, "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -86,12 +84,7 @@ namespace TML143xSoundFixer
             }
             catch (Exception ex)
             {
-                StringBuilder mbText = new StringBuilder();
-                mbText.Append("ファイルのコピー中にエラーが発生しました。");
-                mbText.Append($"\n{ex.Message}");
-                mbText.Append($"\n以下スタックトレース");
-                mbText.Append($"\n{ex.StackTrace}");
-                MessageBox.Show(mbText.ToString(), "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Logger.Error(ex, true, "ファイルのコピー中にエラーが発生しました。");
                 return;
             }
             MessageBox.Show("FAudio.dllの入れ替えに成功しました。", "実行結果", MessageBoxButtons.OK, MessageBoxIcon.Information);
