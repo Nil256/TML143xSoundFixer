@@ -4,7 +4,7 @@ Windows 11で発生している tModLoader v1.4.3の音質が悪い問題を修�
 
 (おそらくWindows11限定?)
 
-<a href="https://note.com/nil256/n/nf754e0b10829" target="_blank" rel="noopener noreferrer">https://note.com/nil256/n/nf754e0b10829</a> の手順をある程度自動化できます。
+https://note.com/nil256/n/nf754e0b10829 の手順をある程度自動化できます。
 
 ## 使い方
 
