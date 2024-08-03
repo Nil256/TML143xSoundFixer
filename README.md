@@ -1,4 +1,4 @@
-# TML143xSoundFixer (tSoundFixer for v1,4,3)
+# TML143xSoundFixer (tSoundFixer for v1.4.3)
 
 Windows 11で発生している tModLoader v1.4.3の音質が悪い問題を修正するためのソフトウェア。
 
